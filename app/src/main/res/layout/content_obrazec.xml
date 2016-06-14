@@ -1,0 +1,112 @@
+
+
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="DESA"
+            android:id="@+id/header"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <EditText
+            android:id="@+id/vpis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vrednost sladkorja" />
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Komentar" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_predZajtrkom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pred zajtrkom"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_poZajtrku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Po zajtrku"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_predKosilom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pred kosilom"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_poKosilu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Po kosilu"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_predVecerjo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pred Večerjo"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_poVecerji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Po Večerji"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_predSpanjem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pred spanjem"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView2"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/text_step"
+            android:text="Danes še niste hodili.. bolj se ptrudite :)"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poslji!"
+            android:onClick="Send"
+            android:id="@+id/button" />
+
+        <TextView
+            android:id="@+id/t"
+            android:text="Vpišite podatke in pritisnite Pošlji!"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
+
+
+
+    </TableLayout>
+</ScrollView>
+
+
